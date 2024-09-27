@@ -1,0 +1,23 @@
+/*QUESTION :-
+Must to have
+A p tag with id "para" should have text size of 30px.
+A p tag with id "para" should have text color darkslategray.
+A p tag with id "para" should have shadow to the text with 2px horizontal-offset and vertical-offset, 3px blur-radius and color orangered.
+A p tag with id "para" should be center aligned.*/
+
+/* SOLUTION  */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+               text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <p id="para" style="font-size:30px; color:darkslategray; text-shadow:2px 2px 3px orangered; text-align:center ">I am Text with shadow.</p>
+</body>
+</html>
