@@ -1,0 +1,27 @@
+/* QUESTION :- Must to have
+The div with the class as container should have a width of 50%
+The div with the class as container should have a height of 200px
+The div with the class as container should have a border of 1px and the color of the border should be black  */
+
+/* SOLUTION  */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            width:50%;
+            height:200px;
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>
