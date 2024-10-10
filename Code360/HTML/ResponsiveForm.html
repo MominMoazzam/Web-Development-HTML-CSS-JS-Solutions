@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag</title>
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      }
+
+      header{
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid;
+    text-transform: capitalize;
+      }
+     header > p{
+    background: rgb(211, 211, 211);
+    color: rgb(29, 30, 29);
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 30px;
+    width: fit-content;
+    padding: 0 10px;
+    border-radius: 5px;
+     }
+
+    .inputType{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid;
+     }
+
+    input{
+    line-height: 24px;
+    width: 300px;
+     }
+
+input[type="reset"], 
+input[type="button"], 
+input[type="submit"], 
+input[type="date"]{
+    width: 200px;
+    padding: 5px 0;
+}
+
+.inputType > p:nth-child(2) {
+    color: rgb(59, 59, 59);
+} 
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Mostly used Input tag with different type's value. </h2>
+        <p>Note: An Input tag having default value of type attribute is text.</p>
+    </header>
+    <div class="inputType">
+        <p>Type : text</p>
+        <p>An input tag where anything can be written.</p>
+        <input type="text" placeholder="Text here...">
+    </div>
+    <div class="inputType">
+        <p>Type : email</p>
+        <p>An input tag used for email</p>
+        <input type="email" placeholder="Email here...">
+    </div>
+    <div class="inputType">
+        <p>Type : password</p>
+        <p>An input tag used to write password which is hidden by default.</p>
+        <input type="password">
+    </div>
+
+    <div class="inputType">
+        <p>Type : number</p>
+        <p>An input tag which accepts only Number, also can made more meaningfull by adding min and max attributes.</p>
+        <input type="number" >
+    </div>
+
+    <div class="inputType">
+        <p>Type : radio</p>
+        <p>An input tag has a great use when have to select single thing from many thing.</p>
+        <label>Radio Box
+            <input type="radio" checked>
+        </label>
+    </div>
+    <div class="inputType">
+        <p>Type : checkbox</p>
+        <p>An input tag has a great use when have to select multiple thing.</p>
+        <label>Check Box
+            <input type="checkbox" checked>
+        </label>
+    </div>
+
+    <div class="inputType">
+        <p>Type : file</p>
+        <p>An input tag to select any file from your local machine's.</p>
+        <input type="file" >
+    </div>
+
+    <div class="inputType">
+        <p>Type : date</p>
+        <p>An input tag, which provides a calender to select the date from it.</p>
+        <input type="date">
+    </div>
+    
+    <div class="inputType">
+        <p>Type : reset</p>
+        <p>An input tag to display a button, upon clicking it clear all the filled forms fields.</p>
+        <input type="reset">
+    </div>
+
+    <div class="inputType">
+        <p>Type : button</p>
+        <p>An input tag to display a simple button.</p>
+        <input type="button" value="Button">
+    </div>
+
+    <div class="inputType">
+        <p>Type : submit</p>
+        <p>An input tag to display a button, upon clicking it submit the forms.</p>
+        <input type="submit" >
+    </div>
+
+</body>
+</html>
