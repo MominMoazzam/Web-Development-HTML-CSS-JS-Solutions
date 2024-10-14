@@ -1,0 +1,35 @@
+/* QUESTION :- Inside the body there should be a div with class "container" inside which there should be two divs with class "container-flex"
+The divs with class as "container-flex" should have a width of 50% , height of 200px and a black border of 5px thickness
+The div with class "container" should have the display as flex in the direction of column therefore the divs should be filling in the container vertically  */
+
+/* SOLUTION */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+      /* write style here */
+      .container-flex{
+    width:50%;
+    height:200px;
+    border:5px solid black;
+       }
+
+     .container{
+    display:flex;
+    flex-direction:column;
+       }
+    </style>
+</head>
+<body>
+
+    <!-- create elements here -->
+    <div class="container">
+        <div class="container-flex"></div>
+        <div class="container-flex"></div>
+    </div>
+     
+</body>
+</html>
