@@ -1,0 +1,74 @@
+/* QUESTION :- Should have 9 element having class 'item' inside element having class 'container'.
+Element having class 'container' should have display flex.
+Element having class 'item' should have specified styles  */
+
+/* SOLUTION */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+      body{
+    padding: 10px;
+    text-align: center;
+}
+
+ul{
+    margin-top: 10px;
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: inside;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul > span{
+    font-size: 20px;
+}
+
+.container{
+    display:flex;
+    width:500px;
+    padding:20px;
+    background-color:whitesmoke;
+    border:1px solid black;
+    flex-wrap:wrap;
+}
+
+.item{
+    width:120px;
+    height:50px;
+    border:1px solid;
+    background-color:bisque;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Flex Wrap</h1>
+    <p>Flex-wrap css property is used to wrap the flex-items into next line instead of reducing the size of each flex-items to adjust new item or overflowing the items.</p>
+    <ul><span>Possible value of this css property are following:</span> 
+        <li>nowrap (default value)</li>
+        <li>wrap</li>
+        <li>wrap-reverse</li>
+    </ul>
+    
+    <section>
+        <!-- create parent element here having 9 children -->
+         <div class="container">
+             <div class="item">1</div>
+             <div class="item">2</div>
+             <div class="item">3</div>
+             <div class="item">4</div>
+             <div class="item">5</div>
+             <div class="item">6</div>
+             <div class="item">7</div>
+             <div class="item">8</div>
+             <div class="item">9</div>
+        </div>
+    </section>
+</body>
+</html>
