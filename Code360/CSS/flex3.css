@@ -1,0 +1,82 @@
+/* Question: Must to have
+element with 'container' class contains 9 children each having 'item' class.
+'container' class style the element with flex display, 20px padding, 500px width, whitesmoke background color, horizontally center aligned flex-items and it should wrap it's children inside it's border.
+'item' class style the element with bisque background color and 1px solid border. */
+
+/* Solution */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+     body{
+    padding: 10px;
+    text-align: center;
+}
+
+ul{
+    margin-top: 10px;
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: inside;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul > span{
+    font-size: 20px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    width:500px;
+    background-color:whitesmoke;
+    flex-wrap:wrap;
+}
+
+.item{
+    width:50px;
+    height:30px;
+    padding:20px;
+    background-color:bisque;
+    border:1px solid black;
+    border-radius:5px;
+}
+    </style>
+</head>
+<body>
+    <h1>Justify Content</h1>
+    <p>Justify-content css property is used align the flex-items along main-axis (by default x-axis).</p>
+    <ul><span>Possible value of this css property are following:</span> 
+        <li>flex-start (default value)</li>
+        <li>space-between</li>
+        <li>space-evenly</li>
+        <li>space-around</li>
+        <li>center</li>
+        <li>flex-end</li>
+    </ul>
+    
+    <section>
+        <!-- create element having 9 children -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            
+        </div>
+    </section>
+</body>
+</html>
