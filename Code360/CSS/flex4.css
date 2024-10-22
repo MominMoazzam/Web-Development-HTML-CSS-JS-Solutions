@@ -1,0 +1,82 @@
+/* QUESTION : Test case : Flex-wrap css property
+Should have 9 element having class 'item' inside element having class 'container'.
+Element having class 'container' should have display flex and vertically center aligned children
+Element having class 'item' should have specified styles */
+
+
+/* SOLUTION */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items</title>
+    <style>
+       body{
+    padding: 10px;
+    text-align: center;
+}
+
+ul{
+    margin-top: 10px;
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: inside;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul > span{
+    font-size: 20px;
+}
+
+/* write your styles here */
+.container{
+    height: 350px;
+    display:flex;
+    padding:20px;
+    width:500px;
+    background-color:whitesmoke;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.item{
+    padding:10px;
+    width:70px;
+    height:30px;
+    background-color:bisque;
+    border:1px solid;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Align-Items CSS Property</h1>
+    <p>Align-Items css property is used align the flex-items along cross-axis (by default y-axis).</p>
+    <ul><span>Possible value of this css property are following:</span> 
+        <li>flex-start: Aligns items to the start of the container.</li>
+        <li>flex-end: Aligns items to the end of the container.</li>
+        <li>center: Centers items within the container.</li>
+        <li>baseline: Aligns items based on their baselines.</li>
+        <li>stretch: (default value) Stretches items to fill the container's cross size.</li>
+    </ul>
+    
+    <section>
+        <!-- create element having 9 children -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </div>
+    </section>
+</body>
+</html>
